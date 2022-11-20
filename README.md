@@ -1,5 +1,8 @@
 # etude-next-boilerplate
 
-.env.local
+## Environment Variables
+
+```.env.local
 MONGODB_URI=******\*******
 MONGODB_DB=******\*\*******
+```
