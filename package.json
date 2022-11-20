@@ -12,11 +12,6 @@
     "test": "jest",
     "prepare": "husky install"
   },
-  "husky": {
-    "hooks": {
-      "pre-push": "npm run test"
-    }
-  },
   "dependencies": {
     "@types/mongodb": "^4.0.7",
     "@types/node": "18.11.9",
@@ -56,5 +51,11 @@
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "npm run test"
+    }
   }
 }
