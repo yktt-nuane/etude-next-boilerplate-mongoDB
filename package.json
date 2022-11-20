@@ -12,6 +12,11 @@
     "test": "jest",
     "prepare": "husky install"
   },
+  "husky": {
+    "hooks": {
+      "pre-push": "yarn test"
+    }
+  },
   "dependencies": {
     "@types/mongodb": "^4.0.7",
     "@types/node": "18.11.9",
