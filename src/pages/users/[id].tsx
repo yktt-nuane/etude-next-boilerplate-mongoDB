@@ -13,7 +13,7 @@ type Props = {
 const StaticPropsDetail = ({ item, errors }: Props) => {
   if (errors) {
     return (
-      <Layout title='Error | Next.js + TypeScript Example'>
+      <Layout title='Error'>
         <p>
           <span style={{ color: 'red' }}>Error:</span> {errors}
         </p>
@@ -21,11 +21,7 @@ const StaticPropsDetail = ({ item, errors }: Props) => {
     )
   }
 
-  return (
-    <Layout title={`${item ? item.name : 'User Detail'} | Next.js + TypeScript Example`}>
-      {item && <ListDetail item={item} />}
-    </Layout>
-  )
+  return <Layout title={`${item ? item.name : 'User Detail'}`}>{item && <ListDetail item={item} />}</Layout>
 }
 
 export default StaticPropsDetail
@@ -57,7 +53,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     // By returning { props: item }, the StaticPropsDetail component
     // will receive `item` as a prop at build time
     return { props: { item } }
-  } catch (err) {
+  } catch (err: any) {
     return { props: { errors: err.message } }
   }
 }
