@@ -4,15 +4,13 @@
 
 - Node.js
   - Next.js
-    - [next-axiom](https://github.com/axiomhq/next-axiom) as **Logger**
   - ESLint
   - Prettier
-  - Stylelint
   - Jest
   - Storybook
 - Tailwind CSS v3+
   - Tailwind UI
-- MongoDB
+- MongoDB API
 
 ### Setup
 
