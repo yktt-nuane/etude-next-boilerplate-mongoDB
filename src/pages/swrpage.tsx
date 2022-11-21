@@ -11,9 +11,9 @@ const Swrpage: NextPage = () => {
   if (!data) return <div>Loading...</div>
 
   return (
-    <div className={styles.container}>
-      <main className={styles.main}>
-        <h1 className={styles.title}>{data[0].name}</h1>
+    <div>
+      <main>
+        <h1 className='text-3xl font-bold'>{data[0].name}</h1>
       </main>
     </div>
   )
