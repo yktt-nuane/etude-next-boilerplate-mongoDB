@@ -3,7 +3,7 @@ import Image from 'next/image'
 function AppLogo() {
   return (
     <>
-      <Image src='/mpedia.png' alt='' width={50} height={50} />
+      <Image src='/.png' alt='' width={50} height={50} />
     </>
   )
 }
