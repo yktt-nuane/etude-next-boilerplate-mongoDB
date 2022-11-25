@@ -16,10 +16,11 @@ export async function connectToDatabase() {
   }
 
   // set the connection options
-  const opts = {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  }
+  //const opts = {
+  //    useNewUrlParser: true,
+  //  useUnifiedTopology: true,
+  //}
+  //
 
   // check the MongoDB URI
   if (!uri) {
@@ -31,9 +32,9 @@ export async function connectToDatabase() {
   }
 
   // Connect to cluster
-  let client = new MongoClient(uri)
+  const client = new MongoClient(uri)
   await client.connect()
-  let db = client.db(dbName)
+  const db = client.db(dbName)
 
   // set cache
   cachedClient = client

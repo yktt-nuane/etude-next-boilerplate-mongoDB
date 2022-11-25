@@ -1,5 +1,18 @@
 {
-  "extends": ["next", "next/core-web-vitals", "plugin:tailwindcss/recommended", "plugin:storybook/recommended"],
+  "extends": [
+    "next",
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "plugin:prettier/recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/recommended",
+    "plugin:import/typescript",
+    "prettier",
+    "plugin:tailwindcss/recommended",
+    "plugin:storybook/recommended"
+  ],
   "plugins": ["tailwindcss", "tailwindcss"],
   "rules": {
     "tailwindcss/classnames-order": "warn",
@@ -8,6 +21,8 @@
     "tailwindcss/migration-from-tailwind-2": "warn",
     "tailwindcss/no-arbitrary-value": "off",
     "tailwindcss/no-custom-classname": "warn",
-    "tailwindcss/no-contradicting-classname": "error"
+    "tailwindcss/no-contradicting-classname": "error",
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off"
   }
 }

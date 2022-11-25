@@ -1,12 +1,10 @@
-import Layout from '../components/Layout'
-import { Button } from '../components/atom/Button/Button'
+import Layout from '../components/templates/Layout/index'
+import Button from '../components/atoms/Button'
 
 const Homepage = () => (
   <Layout title='Home'>
     <h1 className='text-3xl font-bold underline'>Hello World</h1>
-    <Button outlined={false} size={'small'} onClick={() => (document.location.href = 'https://reactjs.org')}>
-      Button
-    </Button>
+    <Button variant='primary'>Button</Button>
   </Layout>
 )
 
