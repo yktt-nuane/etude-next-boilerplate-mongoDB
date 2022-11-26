@@ -12,7 +12,7 @@ const Footer = () => {
         <Box marginBottom={2}>
           <nav>
             <Box>
-              <Text>© 2022 T.Yokoyama. All rights reserved.</Text>
+              <Text>Footer</Text>
             </Box>
           </nav>
         </Box>

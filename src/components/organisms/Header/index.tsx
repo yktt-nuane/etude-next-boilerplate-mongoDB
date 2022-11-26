@@ -1,8 +1,8 @@
 import Link from 'next/link'
 import styled from 'styled-components'
-import AppLogo from 'components/atoms/AppLogo'
 import Text from 'components/atoms/Text'
 import Flex from 'components/layout/Flex'
+import Box from 'components/layout/Box'
 
 // ヘッダーのルート
 const HeaderRoot = styled.header`
@@ -40,11 +40,25 @@ const Header = () => {
       <Flex paddingLeft={3} paddingRight={3} justifyContent='space-between'>
         <Nav as='nav' height='56px' alignItems='center'>
           <NavLink>
-            <Link href='/' passHref>
-              <Anchor as='a'>
-                <AppLogo />
-              </Anchor>
-            </Link>
+            <Box display={{ base: 'none', md: 'block' }}>
+              <Link href='/' passHref>
+                <Anchor>TopPage</Anchor>
+              </Link>
+            </Box>
+          </NavLink>
+          <NavLink>
+            <Box display={{ base: 'none', md: 'block' }}>
+              <Link href='/testpage' passHref>
+                <Anchor>TestPage</Anchor>
+              </Link>
+            </Box>
+          </NavLink>
+          <NavLink>
+            <Box display={{ base: 'none', md: 'block' }}>
+              <Link href='/users/api' passHref>
+                <Anchor>API</Anchor>
+              </Link>
+            </Box>
           </NavLink>
         </Nav>
       </Flex>
