@@ -55,7 +55,7 @@ const Header = () => {
           </NavLink>
           <NavLink>
             <Box display={{ base: 'none', md: 'block' }}>
-              <Link href='/users/api' passHref>
+              <Link href='api/users' passHref>
                 <Anchor>API</Anchor>
               </Link>
             </Box>
