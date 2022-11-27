@@ -10,11 +10,9 @@ const Homepage: NextPage = () => {
       <Text>
         <h1 className='text-3xl font-bold underline'>Hello World</h1>
       </Text>
-      <Button variant='primary'>
+      <Button>
         <Link href={`/testpage`}>
-          <Text as='a' color='white' padding={0} variant='mediumLarge' fontSize={'15px'}>
-            TestPage
-          </Text>
+          <Text color={'white'}>TestPage</Text>
         </Link>
       </Button>
     </Layout>

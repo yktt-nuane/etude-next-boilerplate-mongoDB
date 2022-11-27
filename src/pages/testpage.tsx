@@ -3,6 +3,7 @@ import useSWR from 'swr'
 import Link from 'next/link'
 import Text from 'components/atoms/Text'
 import Button from '../components/atoms/Button'
+import Layout from '../components/templates/Layout/index'
 
 const fetcher = (url: string) => fetch(url).then((res) => res.json())
 
@@ -13,18 +14,18 @@ const Test: NextPage = () => {
   if (!data) return <div>Loading...</div>
 
   return (
-    <div>
-      <main>
-        <h1 className='text-3xl font-bold'>{data[0].name}</h1>
-        <Button variant='primary'>
-          <Link href={`/`}>
-            <Text as='a' color='white' padding={0} variant='mediumLarge' fontSize={'15px'}>
-              TopPage
-            </Text>
-          </Link>
-        </Button>
-      </main>
-    </div>
+    <Layout>
+      <div>
+        <main>
+          <h1 className='text-3xl font-bold'>name is: {data[0].name}</h1>
+          <Button>
+            <Link href={`/`}>
+              <Text color={'white'}>TopPage</Text>
+            </Link>
+          </Button>
+        </main>
+      </div>
+    </Layout>
   )
 }
 
