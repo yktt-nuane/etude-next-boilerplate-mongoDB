@@ -6,6 +6,7 @@ import GlobalSpinnerContextProvider from '../contexts/GlobalSpinnerContext'
 import GlobalSpinner from 'components/organisms/GlobalSpinner'
 import { theme } from 'themes'
 import { fetcher } from 'utils'
+import '../styles/globals.css'
 
 // グローバルのスタイル
 const GlobalStyle = createGlobalStyle`

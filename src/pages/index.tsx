@@ -8,7 +8,7 @@ const Homepage: NextPage = () => {
   return (
     <Layout>
       <Text>
-        <h1 className='text-3xl font-bold underline'>Hello World</h1>
+        <h1 className='text-3xl font-bold underline bg-red-300 text-center'>Hello World</h1>
       </Text>
       <Button>
         <Link href={`/testpage`}>
